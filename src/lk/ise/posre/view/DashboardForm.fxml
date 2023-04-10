@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="dashboardFormContext" prefHeight="294.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ise.posre.control.DashboardFormController">
+   <children>
+      <Label layoutX="20.0" layoutY="24.0" prefHeight="35.0" prefWidth="183.0" text="Dashboard">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDateAndTime" layoutX="413.0" layoutY="16.0" prefHeight="27.0" prefWidth="183.0" text="Date and Time">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnLogout" buttonType="RAISED" layoutX="663.0" layoutY="14.0" onAction="#logoutOnAction" prefHeight="25.0" prefWidth="89.0" ripplerFill="#d32344" text="Logout" textFill="#b50404">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Separator layoutX="20.0" layoutY="71.0" prefHeight="7.0" prefWidth="582.0" />
+      <JFXButton fx:id="btnCustomer" buttonType="RAISED" layoutX="20.0" layoutY="132.0" onAction="#openCustomerFormOnAction" prefHeight="88.0" prefWidth="128.0" text="Customer" textFill="#09dbdb">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnItem" buttonType="RAISED" layoutX="172.0" layoutY="132.0" onAction="#openItemFormOnAction" prefHeight="88.0" prefWidth="128.0" text="Item" textFill="#09dbdb">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnIncome" buttonType="RAISED" layoutX="338.0" layoutY="132.0" onAction="#openIncomeFormOnAction" prefHeight="88.0" prefWidth="128.0" text="Income" textFill="#09dbdb">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnOrder" buttonType="RAISED" layoutX="498.0" layoutY="132.0" onAction="#openOrderFormOnAction" prefHeight="88.0" prefWidth="128.0" text="Order" textFill="#09dbdb">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnNewOrder" buttonType="RAISED" layoutX="644.0" layoutY="132.0" onAction="#openNewOrderFormOnAction" prefHeight="88.0" prefWidth="128.0" text="New Order" textFill="#09dbdb">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

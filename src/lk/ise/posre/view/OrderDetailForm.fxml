@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="orderDetailContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ise.posre.control.OrderDetailFormController">
+   <children>
+      <Label layoutX="25.0" layoutY="23.0" prefHeight="17.0" prefWidth="74.0" text="Order Id" textFill="#492f9c">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="23.0" prefHeight="20.0" prefWidth="126.0" text="Customer Name" textFill="#492f9c">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="462.0" layoutY="23.0" prefHeight="17.0" prefWidth="74.0" text="Date" textFill="#492f9c">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtOrderId" layoutX="14.0" layoutY="53.0" />
+      <JFXTextField fx:id="txtCustomerName" layoutX="227.0" layoutY="53.0" />
+      <JFXTextField fx:id="txtDate" layoutX="417.0" layoutY="53.0" />
+      <TableView fx:id="tblOrderDetail" layoutX="25.0" layoutY="112.0" prefHeight="200.0" prefWidth="544.0">
+        <columns>
+          <TableColumn fx:id="colItem" prefWidth="95.0" text="Item" />
+          <TableColumn fx:id="colDescription" prefWidth="220.0" text="Description" />
+            <TableColumn fx:id="colQty" prefWidth="98.0" text="Qty" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="130.0" text="Unit Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="496.0" layoutY="335.0" prefHeight="20.0" prefWidth="46.0" text="Total" textFill="#492f9c">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtTotal" layoutX="451.0" layoutY="361.0" />
+   </children>
+</AnchorPane>

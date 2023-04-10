@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="loginFormContext" prefHeight="273.0" prefWidth="313.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ise.posre.control.LoginFormController">
+   <children>
+      <Label layoutX="26.0" layoutY="23.0" prefHeight="25.0" prefWidth="88.0" text="Login">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="26.0" layoutY="73.0" prefHeight="3.0" prefWidth="273.0" />
+      <JFXButton fx:id="btnSignIn" buttonType="RAISED" layoutX="25.0" layoutY="214.0" onAction="#loginOnAction" prefHeight="25.0" prefWidth="273.0" ripplerFill="#a15555" text="Sign in" textFill="#b81aad">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtUsername" focusColor="#1b4ad7" labelFloat="true" layoutX="25.0" layoutY="96.0" prefHeight="25.0" prefWidth="273.0" promptText="username" unFocusColor="#a17777" />
+      <JFXPasswordField fx:id="txtPassword" focusColor="#a84047" labelFloat="true" layoutX="26.0" layoutY="167.0" prefHeight="25.0" prefWidth="273.0" promptText="password" unFocusColor="#ae8080" />
+   </children>
+</AnchorPane>
